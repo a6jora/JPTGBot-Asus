@@ -2,11 +2,22 @@ import telebot
 
 from ChapterAdjectiveClass import ChapterAdjectiveClass
 from ChapterOneClass import ChapterOneClass
-from ChapterThreeClass import ChapterThreeClass
+from ChapterJCountClass import ChapterJCountClass
 from ChapterTwoClass import ChapterTwoClass
-from ChapterFiveClass import ChapterFiveClass
+from ChapterVerbClass import ChapterVerbClass
+from ChapterThreeClass import ChapterThreeClass
 from ChapterFourClass import ChapterFourClass
+from ChapterFiveClass import ChapterFiveClass
 from ChapterSixClass import ChapterSixClass
+from ChapterSevenClass import ChapterSevenClass
+from ChapterEightClass import ChapterEightClass
+from ChapterNineClass import ChapterNineClass
+from ChapterTenClass import ChapterTenClass
+from ChapterElevenClass import ChapterElevenClass
+from ChapterTwelveClass import ChapterTwelveClass
+from ChapterThirteenClass import ChapterThirteenClass
+from ChapterFourteenClass import ChapterFourteenClass
+
 
 TOKEN = "1913192559:AAEFpgqawEKF-xies_tr0cnU5y2d3IqZ00A"
 
@@ -18,9 +29,21 @@ chapter3 = ChapterThreeClass()
 chapter4 = ChapterFourClass()
 chapter5 = ChapterFiveClass()
 chapter6 = ChapterSixClass()
-chapter27 = ChapterAdjectiveClass()
+chapter7 = ChapterSevenClass()
+chapter8 = ChapterEightClass()
+chapter9 = ChapterNineClass()
+chapter10 = ChapterTenClass()
+chapter11 = ChapterElevenClass()
+chapter12 = ChapterTwelveClass()
+chapter13 = ChapterThirteenClass()
+chapter14 = ChapterFourteenClass()
+chapter15 = ChapterVerbClass()
+chapter16 = ChapterAdjectiveClass()
+chapter17 = ChapterJCountClass()
 chapters = [chapter1, chapter2, chapter3, chapter4,chapter5,
-            chapter6]
+            chapter6, chapter7, chapter8, chapter9 ,chapter10,
+            chapter11, chapter12, chapter13, chapter14, chapter15,
+            chapter16, chapter17]
 data = {}
 word = ['', '']
 current_chapter = chapter1
@@ -34,13 +57,23 @@ def start(message):
 
 def menu(message):
     bot.send_message(message.chat.id, 'Выберите номер главы: \n'
-                                      '1. Глава 1\n'
-                                      '2. Глава 2\n'
-                                      '3. Глава 3\n'
-                                      '4. Глава 4\n'
-                                      '5. Глава 5　(глаголы)\n'
-                                      '6. Глава 6\n'
-                                      '7. Глава 7\n'
+                                      '1. Слова: 1 - 20\n'
+                                      '2. Слова: 21 - 40\n'
+                                      '3. Слова: 41 - 60\n'
+                                      '4. Слова: 61 - 80\n'
+                                      '5. Слова: 81 - 100\n'
+                                      '6. Слова: 101 - 120\n'
+                                      '7. Слова: 121 - 140\n'
+                                      '8. Слова: 141 - 160\n'
+                                      '9. Слова: 161 - 180\n'
+                                      '10. Слова: 181 - 200\n'
+                                      '11. Слова: 201 - 220\n'
+                                      '12. Слова: 221 - 240\n'
+                                      '13. Японскиие даты и дни недели\n'
+                                      '14. Семья\n'
+                                      '15. Глаголы\n'
+                                      '16. Прилагательные\n'
+                                      '17. Японскиие числительные\n'
                                       '\n'
                                       'для выхода отправтье "exit"')
 
